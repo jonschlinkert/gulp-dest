@@ -1,39 +1,46 @@
 {
   "name": "gulp-dest",
   "description": "Gulp plugin for easily defining destination paths.",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jonschlinkert/gulp-dest",
   "author": {
     "name": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/gulp-dest.git"
-  },
+  "repository": "jonschlinkert/gulp-dest",
   "bugs": {
     "url": "https://github.com/jonschlinkert/gulp-dest/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonschlinkert/gulp-dest/blob/master/LICENSE-MIT"
-  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha"
   },
-  "devDependencies": {
-    "vinyl": "^0.4.6"
-  },
-  "keywords": [],
   "dependencies": {
     "extend-shallow": "^0.2.0",
     "gulp-util": "^3.0.1",
     "parse-filepath": "^0.5.0",
     "rewrite-ext": "^0.1.0",
+    "rte": "^1.0.0",
     "through2": "^0.6.3"
-  }
+  },
+  "devDependencies": {
+    "vinyl": "^0.4.6"
+  },
+  "keywords": [
+    "dest",
+    "destination",
+    "directory",
+    "file",
+    "filepath",
+    "fs",
+    "gulpplugin",
+    "path"
+  ]
 }
