@@ -1,6 +1,6 @@
 # gulp-dest [![NPM version](https://badge.fury.io/js/gulp-dest.svg)](http://badge.fury.io/js/gulp-dest)
 
-> Gulp plugin for easily defining destination paths.
+> Gulp plugin for easily defining destination paths using path variables.
 
 ## Install with [npm](npmjs.org)
 
@@ -59,14 +59,12 @@ var dest = require('gulp-dest');
 var gulp = require('gulp');
 
 gulp.task('default', function() {
-  gulp.src(['a.txt', 'b.txt', 'c.txt'])
-    // basename is automatically generated from the file,
-    // unless overridden in the options
-    .pipe(dest('dist/:basename.:a:b:c', {a: 'A', b: 'B', c: 'C'}))
-    .pipe(gulp.dest('./'))
+  gulp.src(['a.coffee', 'b.coffee', 'c.coffee'])
+    .pipe(dest('dist/:basename.:ext', {ext: '.js'}))
+    .pipe(gulp.dest('.'))
 });
 
-//=> ['dist/a.ABC', 'dist/b.ABC', 'dist/c.ABC']
+//=> ['dist/a.js', 'dist/b.js', 'dist/c.js']
 ```
 
 
