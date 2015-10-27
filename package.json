@@ -1,7 +1,7 @@
 {
   "name": "gulp-dest",
   "description": "Gulp plugin for easily defining destination paths using path variables.",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "homepage": "https://github.com/jonschlinkert/gulp-dest",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/gulp-dest",
@@ -46,7 +46,12 @@
   "verb": {
     "related": {
       "description": "",
-      "list": []
+      "list": [
+        "gulp-assemble",
+        "gulp-extname",
+        "gulp-routes",
+        "gulp-drafts"
+      ]
     }
   }
 }
